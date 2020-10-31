@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11390F29FDD87A41D961054A /* Pods_insta_instaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA85BF8BBA48BFA8D2E1485A /* Pods_insta_instaUITests.framework */; };
+		C2B94D40254CE4130096272A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B94D3F254CE4130096272A /* CommentCell.swift */; };
 		C2C1EE562543B87A00B3B7D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1EE552543B87A00B3B7D9 /* LoginViewController.swift */; };
 		C2C1EE5B2543B88500B3B7D9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1EE5A2543B88500B3B7D9 /* FeedViewController.swift */; };
 		C2C1EE602543C39300B3B7D9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1EE5F2543C39300B3B7D9 /* CameraViewController.swift */; };
@@ -49,6 +50,7 @@
 		3D625A4B76D2E5F50B715018 /* Pods-insta-instaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta-instaUITests.debug.xcconfig"; path = "Target Support Files/Pods-insta-instaUITests/Pods-insta-instaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A11BCCD8C136FDD1BD5092D0 /* Pods-insta-instaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-insta-instaUITests.release.xcconfig"; path = "Target Support Files/Pods-insta-instaUITests/Pods-insta-instaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA85BF8BBA48BFA8D2E1485A /* Pods_insta_instaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_insta_instaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B94D3F254CE4130096272A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		C2C1EE552543B87A00B3B7D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C2C1EE5A2543B88500B3B7D9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C2C1EE5F2543C39300B3B7D9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				C2E4042A2543B30E00789752 /* AppDelegate.swift */,
 				C2E4042C2543B30E00789752 /* SceneDelegate.swift */,
 				C2E404302543B30E00789752 /* Main.storyboard */,
+				C2B94D3F254CE4130096272A /* CommentCell.swift */,
 				C2C1EE6F2543D22300B3B7D9 /* PostCell.swift */,
 				C2C1EE5F2543C39300B3B7D9 /* CameraViewController.swift */,
 				C2E404332543B31000789752 /* Assets.xcassets */,
@@ -421,6 +424,7 @@
 				C2C1EE5B2543B88500B3B7D9 /* FeedViewController.swift in Sources */,
 				C2E4042D2543B30E00789752 /* SceneDelegate.swift in Sources */,
 				C2C1EE702543D22300B3B7D9 /* PostCell.swift in Sources */,
+				C2B94D40254CE4130096272A /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
