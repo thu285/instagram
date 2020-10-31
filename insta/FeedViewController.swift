@@ -67,7 +67,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             if success {
                 print("comment saved!")
             } else {
-                print("sorry, can't save your comment :(S")
+                print("sorry, can't save your comment :(")
             }
         }
         

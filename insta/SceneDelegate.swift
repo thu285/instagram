@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if PFUser.current() != nil {
             let storyboard = UIStoryboard(name: "Main", bundle:  nil)
             self.window = UIWindow(windowScene: windowScene)
-            self.window?.rootViewController = storyboard.instantiateViewController(identifier: "FeedNavCtrl")
+            self.window?.rootViewController = storyboard.instantiateViewController(identifier: "tabBarCtrl")
             self.window?.makeKeyAndVisible()
         }
     }
