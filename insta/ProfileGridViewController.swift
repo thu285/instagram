@@ -20,6 +20,8 @@ class ProfileGridViewController: UIViewController, UICollectionViewDataSource, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadProfileInfo()
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -30,16 +32,31 @@ class ProfileGridViewController: UIViewController, UICollectionViewDataSource, U
         let width = (view.frame.size.width-layout.minimumInteritemSpacing*2)/3
         layout.itemSize = CGSize(width: width, height: width)
         
-        profileImage.layer.cornerRadius = profileImage.frame.size.width/2
-        profileImage.clipsToBounds = true
         
-        username.text = user.username
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         loadPosts()
         
+    }
+    
+    func loadProfileInfo() {
+        
+        // set profile image
+        profileImage.layer.cornerRadius = profileImage.frame.size.width/2
+        profileImage.clipsToBounds = true
+        
+        if user["profile_pic"] != nil {
+            print("lalala")
+            let imageFile = user["profile_pic"] as! PFFileObject
+            let urlStr = imageFile.url!
+            let url = URL(string: urlStr)!
+            profileImage.af.setImage(withURL: url)
+        }
+        
+        // set username
+        username.text = user.username
     }
     
     func loadPosts() {
