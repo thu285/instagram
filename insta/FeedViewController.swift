@@ -122,11 +122,24 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             let user = post["author"] as! PFUser
             cell.usernameLabel.text = user.username
+            
+            cell.profileImage.layer.cornerRadius = cell.profileImage.frame.size.width/2
+            cell.profileImage.clipsToBounds = true
+            if user["profile_pic"] != nil {
+                let imageFile = user["profile_pic"] as! PFFileObject
+                let urlStr = imageFile.url!
+                let url = URL(string: urlStr)!
+                cell.profileImage.af.setImage(withURL: url)
+                
+            }
+            
             cell.captionLabel.text = post["caption"] as! String
+            
             let imageFile = post["image"] as! PFFileObject
             let urlStr = imageFile.url!
             let url = URL(string: urlStr)!
-            cell.photoView.af_setImage(withURL: url)
+            cell.photoView.af.setImage(withURL: url)
+            
             return cell
             
         }
@@ -138,6 +151,16 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             let user = comment["author"] as! PFUser
             cell.nameLabel.text = user.username
+            
+            cell.profileImage.layer.cornerRadius = cell.profileImage.frame.size.width/2
+            cell.profileImage.clipsToBounds = true
+            if user["profile_pic"] != nil {
+                let imageFile = user["profile_pic"] as! PFFileObject
+                let urlStr = imageFile.url!
+                let url = URL(string: urlStr)!
+                cell.profileImage.af.setImage(withURL: url)
+                
+            }
             
             return cell
         }
