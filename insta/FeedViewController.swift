@@ -114,6 +114,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.section]
+        
         let comments = (post["comments"] as? [PFObject]) ?? []
         
         if indexPath.row == 0 {
@@ -121,8 +122,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
             
             let user = post["author"] as! PFUser
+            
+            // set user name
             cell.usernameLabel.text = user.username
             
+            // set profile image
             cell.profileImage.layer.cornerRadius = cell.profileImage.frame.size.width/2
             cell.profileImage.clipsToBounds = true
             if user["profile_pic"] != nil {
@@ -133,8 +137,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
             }
             
+            // set caption
             cell.captionLabel.text = post["caption"] as! String
             
+            // set post's image
             let imageFile = post["image"] as! PFFileObject
             let urlStr = imageFile.url!
             let url = URL(string: urlStr)!
@@ -145,7 +151,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else if indexPath.row <= comments.count {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "abcd") as! CommentCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell") as! CommentCell
             let comment = comments[indexPath.row - 1]
             cell.commentLabel.text = comment["text"] as? String
             

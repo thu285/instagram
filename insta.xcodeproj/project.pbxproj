@@ -11,6 +11,7 @@
 		C24BEE72254DF30500C79332 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24BEE71254DF30500C79332 /* PhotoCollectionViewCell.swift */; };
 		C24BEE77254DF37100C79332 /* ProfileGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24BEE76254DF37100C79332 /* ProfileGridViewController.swift */; };
 		C26D754E254E26B400702D1A /* ChangeProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D754D254E26B400702D1A /* ChangeProfilePicViewController.swift */; };
+		C26D7553254E63BA00702D1A /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D7552254E63BA00702D1A /* SinglePostViewController.swift */; };
 		C2B94D40254CE4130096272A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B94D3F254CE4130096272A /* CommentCell.swift */; };
 		C2C1EE562543B87A00B3B7D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1EE552543B87A00B3B7D9 /* LoginViewController.swift */; };
 		C2C1EE5B2543B88500B3B7D9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C1EE5A2543B88500B3B7D9 /* FeedViewController.swift */; };
@@ -56,6 +57,7 @@
 		C24BEE71254DF30500C79332 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		C24BEE76254DF37100C79332 /* ProfileGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGridViewController.swift; sourceTree = "<group>"; };
 		C26D754D254E26B400702D1A /* ChangeProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeProfilePicViewController.swift; sourceTree = "<group>"; };
+		C26D7552254E63BA00702D1A /* SinglePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostViewController.swift; sourceTree = "<group>"; };
 		C2B94D3F254CE4130096272A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		C2C1EE552543B87A00B3B7D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C2C1EE5A2543B88500B3B7D9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				C2E4042A2543B30E00789752 /* AppDelegate.swift */,
 				C2E4042C2543B30E00789752 /* SceneDelegate.swift */,
 				C2E404302543B30E00789752 /* Main.storyboard */,
+				C26D7552254E63BA00702D1A /* SinglePostViewController.swift */,
 				C24BEE76254DF37100C79332 /* ProfileGridViewController.swift */,
 				C24BEE71254DF30500C79332 /* PhotoCollectionViewCell.swift */,
 				C2B94D3F254CE4130096272A /* CommentCell.swift */,
@@ -429,6 +432,7 @@
 			files = (
 				C2C1EE562543B87A00B3B7D9 /* LoginViewController.swift in Sources */,
 				C24BEE72254DF30500C79332 /* PhotoCollectionViewCell.swift in Sources */,
+				C26D7553254E63BA00702D1A /* SinglePostViewController.swift in Sources */,
 				C2C1EE602543C39300B3B7D9 /* CameraViewController.swift in Sources */,
 				C26D754E254E26B400702D1A /* ChangeProfilePicViewController.swift in Sources */,
 				C2E4042B2543B30E00789752 /* AppDelegate.swift in Sources */,

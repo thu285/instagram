@@ -88,17 +88,15 @@ class ProfileGridViewController: UIViewController, UICollectionViewDataSource, U
         
     }
     
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // prep for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let post = posts[indexPath.item]
+        // pass the selected movie to details view controller
+        let singlePostVC = segue.destination as! SinglePostViewController
+        singlePostVC.post = post
     }
-    */
+    
 
 }
