@@ -38,6 +38,7 @@ class ProfileGridViewController: UIViewController, UICollectionViewDataSource, U
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         loadPosts()
+        loadProfileInfo()
         
     }
     
@@ -48,7 +49,6 @@ class ProfileGridViewController: UIViewController, UICollectionViewDataSource, U
         profileImage.clipsToBounds = true
         
         if user["profile_pic"] != nil {
-            print("lalala")
             let imageFile = user["profile_pic"] as! PFFileObject
             let urlStr = imageFile.url!
             let url = URL(string: urlStr)!
@@ -90,12 +90,15 @@ class ProfileGridViewController: UIViewController, UICollectionViewDataSource, U
     
     // prep for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "segueToSinglePost" else {return}
         let cell = sender as! UICollectionViewCell
         let indexPath = collectionView.indexPath(for: cell)!
         let post = posts[indexPath.item]
         // pass the selected movie to details view controller
         let singlePostVC = segue.destination as! SinglePostViewController
         singlePostVC.post = post
+        
+        
     }
     
 
