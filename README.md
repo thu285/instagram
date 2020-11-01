@@ -26,7 +26,7 @@ Even more **bonus** features:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/rJl9P2g.gif' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/rJl9P2g.gif' width='' alt='Video Walkthrough' /> <img src='https://i.imgur.com/fJV7e9H.gif' width='' alt='Video Walkthrough' />
 
 # Parstagram - Part I
 
