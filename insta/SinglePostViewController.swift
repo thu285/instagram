@@ -30,17 +30,11 @@ class SinglePostViewController: UIViewController, UITableViewDataSource, UITable
         let url = URL(string: urlStr)!
         imageView.af.setImage(withURL: url)
         
-        // set profile image
+        // get the author
         let user = post["author"] as! PFUser
         
-        profileImageView.layer.cornerRadius = profileImageView.frame.size.width/2
-        profileImageView.clipsToBounds = true
-        if user["profile_pic"] != nil {
-            let profileImageFile = user["profile_pic"] as! PFFileObject
-            let pUrlStr = profileImageFile.url!
-            let pUrl = URL(string: pUrlStr)!
-            profileImageView.af.setImage(withURL: pUrl)
-        }
+        // set profile image
+        setProfilePic(photoFile: user["profile_pic"] as? PFFileObject, profileImage: profileImageView)
         
         // set username and caption
         nameLabel.text = user.username
@@ -73,15 +67,7 @@ class SinglePostViewController: UIViewController, UITableViewDataSource, UITable
         let user = comment["author"] as! PFUser
         cell.nameLabel.text = user.username
         
-        cell.profileImage.layer.cornerRadius = cell.profileImage.frame.size.width/2
-        cell.profileImage.clipsToBounds = true
-        if user["profile_pic"] != nil {
-            let imageFile = user["profile_pic"] as! PFFileObject
-            let urlStr = imageFile.url!
-            let url = URL(string: urlStr)!
-            cell.profileImage.af.setImage(withURL: url)
-            
-        }
+        setProfilePic(photoFile: user["profile_pic"] as? PFFileObject, cell: cell)
         
         return cell
     }

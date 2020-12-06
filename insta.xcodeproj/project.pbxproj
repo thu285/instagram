@@ -10,6 +10,7 @@
 		11390F29FDD87A41D961054A /* Pods_insta_instaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA85BF8BBA48BFA8D2E1485A /* Pods_insta_instaUITests.framework */; };
 		C24BEE72254DF30500C79332 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24BEE71254DF30500C79332 /* PhotoCollectionViewCell.swift */; };
 		C24BEE77254DF37100C79332 /* ProfileGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24BEE76254DF37100C79332 /* ProfileGridViewController.swift */; };
+		C259458E257D1902006ECBDD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C259458D257D1902006ECBDD /* Helpers.swift */; };
 		C26D754E254E26B400702D1A /* ChangeProfilePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D754D254E26B400702D1A /* ChangeProfilePicViewController.swift */; };
 		C26D7553254E63BA00702D1A /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D7552254E63BA00702D1A /* SinglePostViewController.swift */; };
 		C2B94D40254CE4130096272A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B94D3F254CE4130096272A /* CommentCell.swift */; };
@@ -56,6 +57,7 @@
 		BA85BF8BBA48BFA8D2E1485A /* Pods_insta_instaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_insta_instaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24BEE71254DF30500C79332 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		C24BEE76254DF37100C79332 /* ProfileGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileGridViewController.swift; sourceTree = "<group>"; };
+		C259458D257D1902006ECBDD /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		C26D754D254E26B400702D1A /* ChangeProfilePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeProfilePicViewController.swift; sourceTree = "<group>"; };
 		C26D7552254E63BA00702D1A /* SinglePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePostViewController.swift; sourceTree = "<group>"; };
 		C2B94D3F254CE4130096272A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				C2E404382543B31000789752 /* Info.plist */,
 				C2C1EE552543B87A00B3B7D9 /* LoginViewController.swift */,
 				C2C1EE5A2543B88500B3B7D9 /* FeedViewController.swift */,
+				C259458D257D1902006ECBDD /* Helpers.swift */,
 				C26D754D254E26B400702D1A /* ChangeProfilePicViewController.swift */,
 			);
 			path = insta;
@@ -437,6 +440,7 @@
 				C26D754E254E26B400702D1A /* ChangeProfilePicViewController.swift in Sources */,
 				C2E4042B2543B30E00789752 /* AppDelegate.swift in Sources */,
 				C2C1EE5B2543B88500B3B7D9 /* FeedViewController.swift in Sources */,
+				C259458E257D1902006ECBDD /* Helpers.swift in Sources */,
 				C2E4042D2543B30E00789752 /* SceneDelegate.swift in Sources */,
 				C2C1EE702543D22300B3B7D9 /* PostCell.swift in Sources */,
 				C24BEE77254DF37100C79332 /* ProfileGridViewController.swift in Sources */,
